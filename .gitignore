@@ -3,6 +3,7 @@
 *.xml.bz2
 *.xml.gz
 
+wikiextractor/
 
 # Fajlovi koji počinju sa 'wiki_'
 wiki_*
