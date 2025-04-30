@@ -1,0 +1,8 @@
+*.xml
+*.xml.bz2
+*.xml.gz
+
+
+*.csv
+*.json
+*.txt
