@@ -8,3 +8,7 @@
 wiki_*
 
 
+# Virtual environments
+venv/
+venv-bigdata/
+.env/
