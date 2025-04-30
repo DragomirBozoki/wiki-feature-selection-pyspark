@@ -10,7 +10,7 @@ This project processes the full Wikipedia dump to:
 
 All processing is done using PySpark for scalability.
 
-** Download: enwiki-latest-pages-articles 
+# Download: enwiki-latest-pages-articles 
 
 ## Project Structure
 
