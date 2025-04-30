@@ -3,10 +3,6 @@
 *.xml.bz2
 *.xml.gz
 
-# Raspakovani fajlovi
-*.csv
-*.json
-*.txt
 
 # Fajlovi koji počinju sa 'wiki_'
 wiki_*
