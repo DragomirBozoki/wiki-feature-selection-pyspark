@@ -10,9 +10,11 @@ This project processes the full Wikipedia dump to:
 
 All processing is done using PySpark for scalability.
 
+# Download: enwiki-latest-pages-articles 
+
 ## Project Structure
 
-data/extracted/ — Raw Wikipedia JSON data
+data/extracted/ — Raw Wikipedia JSON data - after extracting enwiki-latest-pages-articles
 
 src/preprocessing.py — Text cleaning, tokenization
 
