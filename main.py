@@ -6,7 +6,8 @@ from src.n_grams import *
 from src.preprocessing import *
 from src.classification import *
 from src.load_save import load_list_from_txt, save_list_to_txt
-from label import label_text
+from src.label import label_text
+
 # PySpark
 from pyspark.sql.functions import udf, col
 from pyspark.sql.types import StringType
@@ -22,15 +23,15 @@ spark, df = spark_load()
 # Tokenizacija i labelovanje
 # --------------------------------------------
 df_tokens = tokenization(df)
-
 label_udf = udf(label_text, StringType())
 df_tokens = df_tokens.withColumn("label", label_udf(col("text")))
 
-print("\n--- LOAD COMPLETE ---\n")
+print("\n---LOAD COMPLETE---\n")
 
 # --------------------------------------------
 # UNIGRAMS
 # --------------------------------------------
+
 print(">>> Processing UNIGRAMS...")
 word_counts, word_common = word_count(df_tokens)
 total_entropy_unigrams = calculate_entr_n_grams(df_tokens, word_counts, n=1)
