@@ -1,4 +1,4 @@
-# 🧠 Wikipedia Topic Classification Pipeline
+# 🧠 Wikipedia Topic Classification
 
 A modular pipeline for extracting, cleaning, processing, and classifying Wikipedia articles into predefined topics using **Apache Spark** and optionally **Apache Airflow** for orchestration.
 
